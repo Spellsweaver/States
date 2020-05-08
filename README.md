@@ -1,2 +1,3 @@
 # States
  
+A lightweight library to control game state in an intuitive way. To use it, just create a file for each state in states/ folder, with the same callbacks as love2d uses (i.e. my_state.draw() will be called instead of love.draw() when you are in the state my_state). At the start, call states.setup() then use states.switch("mystate",params). This will triggen the only non-vanilla state callback mystate.open(params) that allows you to pass data between states conveniently and make general setup on state switching (like visual transitions.)
